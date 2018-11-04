@@ -59,8 +59,6 @@ function Game({ testMemos }) {
       setTimeout(() => {
         dispatch({ type: "RESET" });
       }, 4000);
-
-      return;
     }
   }
 
