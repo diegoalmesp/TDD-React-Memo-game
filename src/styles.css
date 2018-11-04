@@ -1,0 +1,97 @@
+:root {
+  --dark: #000000;
+  --gray: #222222;
+  --light-gray: #444444;
+  --green: rgb(0, 168, 0);
+  --green-active: rgb(0, 255, 0);
+  --red: rgb(168, 0, 0);
+  --red-active: red;
+  --yellow: rgb(168, 168, 0);
+  --yellow-active: yellow;
+  --blue: rgb(0, 0, 168);
+  --blue-active: blue;
+}
+
+.App {
+  font-family: sans-serif;
+  text-align: center;
+}
+
+.simon {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  width: 400px;
+  height: 400px;
+  background-color: var(--dark);
+  margin: 0 auto;
+}
+
+.progression {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+}
+
+.progression > div {
+  margin: 0 2px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  background-color: var(--light-gray);
+  border-radius: 100%;
+}
+
+.simon .button {
+  display: flex;
+  width: 160px;
+  height: 160px;
+  margin: 5px;
+  cursor: pointer;
+  border: 15px solid var(--gray);
+}
+
+.button.green {
+  background-color: var(--green);
+  border-radius: 180px 15px 15px 15px;
+  box-shadow: inset 4px 4px 20px 6px var(--dark);
+}
+
+.button.green:active {
+  background-color: var(--green-active);
+}
+
+.button.red {
+  background-color: var(--red);
+  border-radius: 15px 180px 15px 15px;
+  box-shadow: inset -2px 4px 20px 6px var(--dark);
+}
+
+.button.red:active {
+  background-color: var(--red-active);
+}
+
+.button.yellow {
+  background-color: var(--yellow);
+  border-radius: 15px 15px 15px 180px;
+  box-shadow: inset 4px -2px 20px 6px var(--dark);
+}
+
+.button.yellow:active {
+  background-color: var(--yellow-active);
+}
+
+.button.blue {
+  background-color: var(--blue);
+  border-radius: 15px 15px 180px 15px;
+  box-shadow: inset -2px -2px 20px 6px var(--dark);
+}
+
+.button.blue:active {
+  background-color: var(--blue-active);
+}
